@@ -1,0 +1,96 @@
+app-card-page{
+  margin:10px 20px;
+  background-color: transparent;
+}
+
+.home__container{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; /*alinha a coluna no centro */
+  min-height: 100vh; /* Faz o container ocupar a altura total da tela */
+  /* border: 1px solid white; */
+}
+
+.home_presenting{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; /*alinha a coluna no centro*/
+  min-height: 500px;
+
+}
+.home_presenting > h1{
+  font-size: 30px;
+  background-color: transparent;
+  text-shadow: 2px 2px 0px rgb(99, 36, 0);
+
+}
+
+.apps{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; /*alinha a coluna no centro*/
+  justify-content: space-around; /*alinha no centro da linha*/
+  background-color: transparent;
+
+}
+
+.home_services{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /*alinha a coluna no centro*/
+  min-height: 500px;
+
+}
+.services_products{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.home_video {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  /* border: 1px solid white; */
+}
+
+
+.home_video > video{
+  width: 98.5vw;
+  opacity: 40%;
+  z-index: 0;
+}
+
+
+.home_video > h3{
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 50%;
+  left: 50%;
+  color: white; /* Cor do texto*/
+  font-size: 20px; /* Tamanho da fonte*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra ao texto para melhorar a legibilidade*/
+  text-align: center; /* Centraliza o texto*/
+  background-color: transparent; /* Certifica-se de que não há fundo ou cor de fundo na `div`*/
+}
+
+/* position: absolute; /* Coloca o vídeo atrás do conteúdo */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; Faz o vídeo cobrir toda a largura do container */
+  /* height: 100%; Faz o vídeo cobrir toda a altura do container */
+  /* object-fit: cover; Faz o vídeo se ajustar ao tamanho do container sem distorção */
+
+
+  /* position: absolute; Posiciona o texto acima do vídeo */
+  /* top: 50%; Posiciona o texto verticalmente no meio */
+  /* left: 50%; Posiciona o texto horizontalmente no meio */
+  /* transform: translate(-50%, -50%); Ajusta o texto para realmente ficar centralizado */
+  /* color: white; Cor do texto para visibilidade */
+  /* font-size: 3rem; Tamanho do texto */
+  /* font-weight: bold; Deixa o texto em negrito */
+

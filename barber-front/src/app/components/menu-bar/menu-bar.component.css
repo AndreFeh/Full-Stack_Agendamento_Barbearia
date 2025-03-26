@@ -1,0 +1,73 @@
+.menu__container{
+  /* ZERANDO PROPORCOES */
+  height: 90px;
+  width: 98.5vw;
+  background-color: black;
+  border-bottom: 3px solid rgb(99, 36, 0);
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu_img{
+  padding: 0px 20px;
+
+  display: flex;
+  height: 90%;
+}
+
+.menu_img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.menu_content{
+  padding: 0px 50px;
+}
+
+.menu_content > ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu_content > ul > li{
+  list-style: none;
+  margin: 0px 15px;
+}
+
+.menu_content > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;  /* Necessário para posicionar o pseudo-elemento */
+  display: inline-block;
+  padding: 10px 0;
+  transition: color 0.3s ease; /* Transição da cor */
+
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Criando a linha vermelha embaixo do link */
+.menu_content > ul > li > a::after {
+  content: '';  /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;  /* Espessura da linha */
+  background-color:rgb(99, 36, 0);  /* Cor da faixa */
+  transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+/* No hover, aumentamos a largura da linha */
+.menu_content > ul > li > a:hover {
+  color: gray;  /* Cor do link no hover */
+}
+
+.menu_content > ul > li > a:hover::after {
+  width: 100%;  /* Faz a linha se expandir */
+}

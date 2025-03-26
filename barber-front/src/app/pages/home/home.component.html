@@ -1,0 +1,44 @@
+<div class="home__container">
+  <!--
+    'background-size': 'cover',  // Garante que a imagem cubra todo o elemento
+    'background-position': 'center center',  // Garante que a imagem seja centralizada
+    'background-repeat': 'no-repeat',  // Garante que a imagem não se repita
+    'height': '100vh'  // Opcional: Ajusta a altura da div para a altura da tela
+  -->
+  <div class="home_presenting" [ngStyle]="{
+    'background-image': 'url(' + imgBack + ')',
+    'background-size': 'cover',
+    'background-position': 'center center',
+    'background-repeat': 'no-repeat'}">
+    <h1>Orca Barbearia e Tatoo</h1>
+    <div class="apps">
+      <app-card-page
+      title="Barbearia"
+      link="barbearia"
+      image="assets/barbearia.png"
+      />
+      <app-card-page
+      title="Tatoo"
+      link="tatoo"
+      image="assets/tatoo1.png"
+      />
+      <app-card-page
+      title="Loja"
+      link="shop"
+      image="assets/orca_brb_srv.png"/>
+    </div>
+  </div>
+  <div class="home_services">
+    <h1>Serviços</h1>
+    <div class="services_products">
+      <app-card-product-main/>
+    </div>
+
+  </div>
+  <div class="home_video">
+    <video loop muted autoplay>
+      <source src="assets/mp4/barber-video.webm" type="video/webm">
+    </video>
+    <h3>Hello</h3>
+  </div>
+</div>

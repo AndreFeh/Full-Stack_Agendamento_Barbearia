@@ -1,0 +1,57 @@
+.page__container{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  border-radius: 15px;
+  border: 4px solid rgb(99, 36, 0);  /* Cor da faixa */
+}
+
+.page__container > a{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.page__container:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+
+.page_img {
+  width: 100%;
+  height: 85%;
+}
+
+.page_img > img{
+  width: inherit;
+  height: inherit;
+  /* Cria o efeito de degradê */
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Para compatibilidade com Safari */
+  /* -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);  */
+}
+
+.page_title {
+  height: 15%;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.page_title > h3{
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none; /* Remove o sublinhado */
+  text-shadow: 2px 2px 0px rgb(99, 36, 0);
+
+}
+
+
+
